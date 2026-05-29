@@ -1,0 +1,43 @@
+{
+	"$schema": "https://raw.githubusercontent.com/gotgenes/pi-permission-system/main/schemas/permissions.schema.json",
+	"debugLog": false,
+	"permissionReviewLog": true,
+	"yoloMode": false,
+	"piInfrastructureReadPaths": [],
+	"permission": {
+		"*": "ask",
+		"path": {
+			"*": "allow",
+			"*.env": "deny",
+			"*.env.*": "deny",
+			"*.env.example": "allow"
+		},
+		"read": "allow",
+		"grep": "allow",
+		"find": "allow",
+		"ls": "allow",
+		"write": "ask",
+		"edit": "ask",
+		"bash": {
+			"*": "ask",
+			"ls *": "allow",
+			"grep *": "allow",
+			"find *": "allow",
+			"head *": "allow",
+			"xargs: *": "allow",
+			"cat *": "allow",
+			"sort *": "allow"
+		},
+		"mcp": {
+			"mcp_status": "allow"
+		},
+		"skill": {
+			"*": "ask"
+		},
+		"external_directory": {
+			"/opt/homebrew/Cellar/pi-coding-agent/*": "allow"
+		},
+		"ask_user_question": "allow",
+		"ctx_search": "allow"
+	}
+}

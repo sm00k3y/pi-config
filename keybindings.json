@@ -1,0 +1,17 @@
+{
+	"tui.select.up": [
+		"up",
+		"ctrl+k"
+	],
+	"tui.select.down": [
+		"down",
+		"ctrl+j"
+	],
+	"app.model.cycleForward": [],
+	"app.models.toggleProvider": [],
+	"app.session.togglePath": [],
+	"app.session.rename": [],
+	"app.session.resume": [
+		"ctrl+r"
+	]
+}

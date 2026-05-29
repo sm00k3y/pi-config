@@ -1,0 +1,19 @@
+{
+  "lastChangelogVersion": "0.77.0",
+  "defaultProvider": "anthropic",
+  "defaultModel": "claude-sonnet-4-6",
+  "defaultThinkingLevel": "medium",
+  "packages": [
+    "npm:@gotgenes/pi-anthropic-auth",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@gotgenes/pi-permission-system",
+    "npm:pi-terminal-theme",
+    "npm:pi-tool-display",
+    "npm:pi-simplify",
+    "npm:pi-web-access",
+    "npm:context-mode"
+  ],
+  "enableInstallTelemetry": false,
+  "theme": "terminal",
+  "hideThinkingBlock": false
+}
