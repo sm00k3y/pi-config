@@ -3,6 +3,8 @@
 	"debugLog": false,
 	"permissionReviewLog": true,
 	"yoloMode": false,
+	"toolInputPreviewMaxLength": 10000,
+	"toolTextSummaryMaxLength": 10000,
 	"piInfrastructureReadPaths": [],
 	"permission": {
 		"*": "ask",
@@ -24,9 +26,15 @@
 			"grep *": "allow",
 			"find *": "allow",
 			"head *": "allow",
-			"xargs: *": "allow",
+			"xargs *": "allow",
 			"cat *": "allow",
-			"sort *": "allow"
+			"sort *": "allow",
+			"which *": "allow",
+			"cd *": "allow",
+			"go env GOPATH": "allow",
+			"wc *": "allow",
+			"tail *": "allow",
+			"git diff *": "allow"
 		},
 		"mcp": {
 			"mcp_status": "allow"
@@ -36,9 +44,11 @@
 		},
 		"external_directory": {
 			"/opt/homebrew/Cellar/pi-coding-agent/*": "allow",
-			"/opt/homebrew/bin/pi/*": "allow"
+			"/opt/homebrew/bin/pi/*": "allow",
+			"~/.go/pkg/*": "allow"
 		},
 		"ask_user_question": "allow",
-		"ctx_search": "allow"
+		"ctx_search": "allow",
+		"todo": "allow"
 	}
 }

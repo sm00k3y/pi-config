@@ -1,7 +1,7 @@
 {
-  "lastChangelogVersion": "0.77.0",
-  "defaultProvider": "anthropic",
-  "defaultModel": "claude-sonnet-4-6",
+  "lastChangelogVersion": "0.80.3",
+  "defaultProvider": "github-copilot",
+  "defaultModel": "claude-opus-4.7",
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:@gotgenes/pi-anthropic-auth",
@@ -11,7 +11,8 @@
     "npm:pi-tool-display",
     "npm:pi-simplify",
     "npm:pi-web-access",
-    "npm:context-mode"
+    "npm:context-mode",
+    "npm:@juicesharp/rpiv-todo"
   ],
   "enableInstallTelemetry": false,
   "theme": "terminal",
