@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/gotgenes/pi-permission-system/main/schemas/permissions.schema.json",
+	"$schema": "https://raw.githubusercontent.com/gotgenes/pi-packages/main/packages/pi-permission-system/schemas/permissions.schema.json",
 	"debugLog": false,
 	"permissionReviewLog": true,
 	"yoloMode": false,
@@ -10,8 +10,8 @@
 		"*": "ask",
 		"path": {
 			"*": "allow",
-			"*.env": "deny",
-			"*.env.*": "deny",
+			"*.env": "ask",
+			"*.env.*": "ask",
 			"*.env.example": "allow"
 		},
 		"read": "allow",
@@ -31,10 +31,14 @@
 			"sort *": "allow",
 			"which *": "allow",
 			"cd *": "allow",
+			"echo *": "allow",
 			"go env GOPATH": "allow",
 			"wc *": "allow",
 			"tail *": "allow",
-			"git diff *": "allow"
+			"git diff *": "allow",
+			"git log *": "allow",
+			"git status *": "allow",
+			"sed *": "allow"
 		},
 		"mcp": {
 			"mcp_status": "allow"
@@ -45,7 +49,8 @@
 		"external_directory": {
 			"/opt/homebrew/Cellar/pi-coding-agent/*": "allow",
 			"/opt/homebrew/bin/pi/*": "allow",
-			"~/.go/pkg/*": "allow"
+			"~/.go/pkg/*": "allow",
+			"~/Desktop/work/tokenovate/bcs/*": "allow"
 		},
 		"ask_user_question": "allow",
 		"ctx_search": "allow",

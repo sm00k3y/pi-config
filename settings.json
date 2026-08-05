@@ -1,7 +1,7 @@
 {
-  "lastChangelogVersion": "0.80.3",
+  "lastChangelogVersion": "0.83.0",
   "defaultProvider": "github-copilot",
-  "defaultModel": "claude-opus-4.7",
+  "defaultModel": "claude-opus-5",
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:@gotgenes/pi-anthropic-auth",
@@ -11,7 +11,6 @@
     "npm:pi-tool-display",
     "npm:pi-simplify",
     "npm:pi-web-access",
-    "npm:context-mode",
     "npm:@juicesharp/rpiv-todo"
   ],
   "enableInstallTelemetry": false,
