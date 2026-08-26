@@ -1,7 +1,7 @@
 {
-  "lastChangelogVersion": "0.83.0",
+  "lastChangelogVersion": "0.84.3",
   "defaultProvider": "github-copilot",
-  "defaultModel": "claude-opus-5",
+  "defaultModel": "claude-sonnet-5",
   "defaultThinkingLevel": "medium",
   "packages": [
     "npm:@gotgenes/pi-anthropic-auth",
@@ -11,7 +11,8 @@
     "npm:pi-tool-display",
     "npm:pi-simplify",
     "npm:pi-web-access",
-    "npm:@juicesharp/rpiv-todo"
+    "npm:@juicesharp/rpiv-todo",
+    "git:github.com/DietrichGebert/ponytail"
   ],
   "enableInstallTelemetry": false,
   "theme": "terminal",

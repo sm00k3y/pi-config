@@ -3,9 +3,13 @@
 	"debugLog": false,
 	"permissionReviewLog": true,
 	"yoloMode": false,
-	"toolInputPreviewMaxLength": 10000,
-	"toolTextSummaryMaxLength": 10000,
+	"doublePressToConfirm": true,
+	"forwardingTimeoutMs": 600000,
 	"piInfrastructureReadPaths": [],
+	"authorizerChain": [],
+	"promptMaxRows": 24,
+	"promptFieldMaxWidth": 400,
+	"reviewLogFieldMaxWidth": 1000,
 	"permission": {
 		"*": "ask",
 		"path": {
